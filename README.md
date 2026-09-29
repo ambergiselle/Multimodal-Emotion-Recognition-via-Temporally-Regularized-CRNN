@@ -177,7 +177,7 @@ emotion-recognition/
 
 | Member | Contribution |
 |---|---|
-| **Chee Hui Sheen** | Speech emotion recognition: CRNN and temporal regularization novelty |
+| Chee Hui Sheen | Speech emotion recognition: CRNN and temporal regularization novelty |
 | Kong Yenly | Speech emotion recognition: CRNN and temporal regularization |
 | Wong Hui Xuan | Relative Multi-head Attention LSTM, Relative EA-LSTM, user interface |
 | Koh Zhi Ling | EA-LSTM, Relative EA-LSTM |
