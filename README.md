@@ -114,8 +114,8 @@ The datasets are not redistributed in this repository. Please download them from
 ### Installation
 
 ```bash
-git clone https://github.com/ambergiselle/emotion-recognition.git
-cd emotion-recognition
+git clone https://github.com/ambergiselle/Multimodal-Emotion-Recognition-via-Temporally-Regularized-CRNN.git
+cd Multimodal-Emotion-Recognition-via-Temporally-Regularized-CRNN
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
