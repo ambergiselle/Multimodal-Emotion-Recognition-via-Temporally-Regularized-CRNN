@@ -1,0 +1,27 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Runtime uploads / user recordings
+uploads/
+*.wav
+!docs/**/*.wav
+
+# Datasets (download separately, see README)
+data/
+datasets/
+
+# Archives
+*.zip
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

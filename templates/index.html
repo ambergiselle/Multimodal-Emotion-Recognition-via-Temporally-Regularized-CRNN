@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emotion Recognition System</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+
+        <div class = "page">
+            <div class = "card">
+                <h1>Emotion Recognition System</h1>
+
+                <div class = "tabs">
+                    <button class = "tab-btn active" onclick = "showText()">Text Emotion</button>
+                    <button class = "tab-btn" onclick = "showVoice()">Speech Emotion</button>
+                </div>
+
+                <!-- TEXT -->
+                 <div id = "textSection" class = "section">
+                    <textarea id = "textInput" placeholder = "Type your text here... "></textarea>
+                    <button class = "primary-btn" onclick = "analyzeText()">Analyze</button>
+
+                    <div class = "result">
+                        <p>Emotion: <span id = "textEmotion">-</span></p>
+                        <p>Confidence: <span id = "textConfidence">-</span></p>
+                    </div>
+                 </div>
+
+                 <!-- VOICE -->
+                  <div id = "voiceSection" class = "section hidden">
+                    <input type = "file" id = "audioFile" accept = "audio/*">
+
+                    <div class = "record-controls">
+                        <button id = "startBtn" class = "record-btn" onclick = "startRecording()">🎤 Start</button>
+                        <button id = "stopBtn" class = "stop-btn" onclick = "stopRecording()" disabled>⏹ Stop</button>
+                    </div>
+
+                    <audio id = "audioPreview" controls class = "audio-preview"></audio>
+
+                    <button class = "primary-btn" onclick = "analyzeVoice()">Analyze</button>
+
+                    <div class = "result">
+                        <p>Emotion: <span id = "voiceEmotion">-</span></p>
+                        <p>Confidence: <span id = "voiceConfidence">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "{{ url_for('static', filename = 'js/app.js') }}"></script>
+    </body>
+</html>

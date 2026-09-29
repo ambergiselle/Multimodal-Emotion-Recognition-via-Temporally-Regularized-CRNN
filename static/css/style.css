@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #f1f7d8, #af90ce);
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 520px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #eee;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.tab-btn.active {
+    background: #af90ce;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.96);
+}
+
+.section {
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background: #af90ce; 
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn.loading {
+    background: #aaa;
+    cursor: wait;
+}
+
+.primary-btn:hover {
+    background: #f1f7d8;
+    color: black;
+}
+
+.record-controls {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.record-btn, .stop-btn {
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.record-btn {
+    background: #f1bcda;
+    color: white;
+}
+
+.record-btn.recording {
+    background: #e63946;
+    box-shadow: 0 0 12px #e63946;
+    animation: pulse 1.2s infinite;
+}
+
+.stop-btn {
+    background: #666;
+    color: white;
+}
+
+.stop-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.audio-preview {
+    width: 100%;
+    margin: 12px 0;
+    display: none;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+}
