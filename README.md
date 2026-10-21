@@ -184,5 +184,9 @@ emotion-recognition/
 | Pang Siao Xuan | Data preprocessing, rule-based emoji model, hybrid text model |
 
 ## Tech Stack
+**Languages:** Python, HTML, CSS, JavaScript  
+**Machine Learning:** PyTorch, TensorFlow, Keras  
+**Audio Processing:** Librosa, Web Audio API  
+**Natural Language Processing:** NLTK  
+**Backend:** Flask
 
-Python · PyTorch · TensorFlow / Keras · Librosa · NLTK · Flask · HTML / CSS / JavaScript · Web Audio API
