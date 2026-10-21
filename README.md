@@ -184,9 +184,16 @@ emotion-recognition/
 | Pang Siao Xuan | Data preprocessing, rule-based emoji model, hybrid text model |
 
 ## Tech Stack
-**Languages:** Python, HTML, CSS, JavaScript  
-**Machine Learning:** PyTorch, TensorFlow, Keras  
-**Audio Processing:** Librosa, Web Audio API  
-**Natural Language Processing:** NLTK  
-**Backend:** Flask
+
+| Category | Technology | Purpose |
+|---|---|---|
+| **Languages** | Python | Model training, inference and backend logic |
+| | HTML, CSS, JavaScript | Web interface for text input, audio upload and live recording |
+| **Deep Learning** | PyTorch | Speech emotion model (CRNN with temporal regularization) |
+| | TensorFlow / Keras | Text emotion model (Relative EA-LSTM with multi-head attention) |
+| **Audio Processing** | Librosa | Audio loading and log-Mel spectrogram feature extraction |
+| | Web Audio API | Live microphone capture in the browser |
+| **Natural Language Processing** | NLTK | Tokenization and lemmatization for text preprocessing |
+| | NRCLex | NRC Emotion Lexicon features fed into the EA-LSTM cell |
+| **Backend** | Flask | Web server and REST API routes for predictions |
 
